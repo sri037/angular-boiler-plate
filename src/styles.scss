@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+// add the grid
+@import "theme/reset"; // override bootstrap styles
+@import "theme/variable";
+
+@font-face {
+  font-family: Montserrat;
+  src: url("assets/fonts/MontserratAlternates-Regular.ttf");
+}
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 16px;
+  font-family: Montserrat, "Helvetica Neue", sans-serif;
+  //font-weight: 300;
+}
