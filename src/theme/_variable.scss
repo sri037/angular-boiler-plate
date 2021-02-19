@@ -1,3 +1,11 @@
-$color_list: (
-  $primary: #ff8d26,
+
+// app theme
+$theme-colors: (
+  "primary":  #ff8d26
 );
+
+// declare font family
+@font-face {
+  font-family: MuseoSans;
+  src: url("../assets/fonts/MuseoSans-300.otf");
+}
