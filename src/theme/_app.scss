@@ -1,0 +1,71 @@
+@import "variable";
+
+.p_color {
+  color: map-get($theme-colors, primary);
+}
+
+.add__pd {
+  @each $side, $index in $sideList {
+    &.#{$side} {
+      @each $name, $pd in $space-lists {
+        &.#{$name} {
+          @if ($side == 'top_btm') {
+            padding-top: #{$pd};
+            padding-bottom: #{$pd};
+          } @else if ($side == 'lr') {
+            padding-left: #{$pd};
+            padding-right: #{$pd};
+          } @else if ($side == 'box') {
+            padding: #{$pd};
+          } @else {
+            padding-#{$side}: #{$pd};
+          }
+        }
+      }
+    }
+  }
+}
+
+.add__br {
+  @each $side, $index in $sideList {
+    &.#{$side} {
+      @if ($side == 'top_btm') {
+        border-top: 1px solid map-get($theme-colors, dark);
+        border-bottom: 1px solid map-get($theme-colors, dark);
+      } @else if ($side == 'box') {
+        border: 1px solid map-get($theme-colors, primary);
+      } @else if ($side == 'lr') {
+        border-left: 1px solid map-get($theme-colors, primary);
+        border-right: 1px solid map-get($theme-colors, primary);
+      } @else {
+        border-#{$side}: 1px solid map-get($theme-colors, dark);
+      }
+    }
+  }
+
+  &.add-curve {
+    border-radius: 25px;
+  }
+}
+
+.add__mr {
+  @each $side, $index in $sideList {
+    &.#{$side} {
+      @each $name, $pd in $space-lists {
+        &.#{$name} {
+          @if ($side == 't_b') {
+            margin-top: #{$pd};
+            margin-bottom: #{$pd};
+          } @else if ($side == 'box') {
+            margin: #{$pd};
+          } @else if ($side == 'lr') {
+            margin-left: #{$pd};
+            margin-right: #{$pd};
+          } @else {
+            margin-#{$side}: #{$pd};
+          }
+        }
+      }
+    }
+  }
+}

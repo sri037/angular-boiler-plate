@@ -9,3 +9,15 @@ $theme-colors: (
   font-family: MuseoSans;
   src: url("../assets/fonts/MuseoSans-300.otf");
 }
+
+$sideList: (top, bottom, left, right, top_btm, box, lr);
+
+
+$space-lists: (
+  sp05: 0.5rem, // m1
+  sp10: 1rem, // m2
+  sp15: 1.5rem, // m2
+  sp20: 2rem, // m2
+  sp30: 3rem, //m3
+  sp40: 4rem, //m4
+);

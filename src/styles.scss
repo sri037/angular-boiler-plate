@@ -3,6 +3,7 @@
 // to override bootstrap theme
 @import "theme/variable";
 @import "theme/reset"; // override bootstrap styles
+@import "theme/app";
 
 // add bootstrap functions to app
 @import "~bootstrap/scss/bootstrap.scss";

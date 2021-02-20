@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { KitchenSinkComponent } from './_me/kitchen-sink/kitchen-sink.component';
+import { KitchenSinkComponent } from './_me/components/kitchen-sink/kitchen-sink.component';
 import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
